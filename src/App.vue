@@ -1,17 +1,21 @@
 <template>
   <div id="app">
+    <Navbar/>
+    <router-view/>
     <img width="25%" src="./assets/logo.png">
-    <HelloWorld msg="Hello Vue in CodeSandbox!" />
+    <HelloWorld msg="Hello Vue in CodeSandbox!"/>
   </div>
 </template>
 
 <script>
+import Navbar from "@/components/Navbar";
 import HelloWorld from "./components/HelloWorld";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    HelloWorld,
+    Navbar
   }
 };
 </script>
